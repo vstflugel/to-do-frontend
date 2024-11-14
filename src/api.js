@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const API = axios.create({baseURL: 'http://localhost:5050'});
- const API = axios.create({baseURL: 'https://to-do-frontend-red.vercel.app/'});
+ const API = axios.create({baseURL: 'https://to-do-3jvu.onrender.com'});
 
 export const fetchTodos = () => API.get("/to-do");
 export const createTodo = (newTodo) => API.post("/to-do", newTodo);
